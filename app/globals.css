@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 45 30% 98%;
+		--foreground: 160 50% 15%;
+
+		--card: 45 30% 98%;
+		--card-foreground: 160 50% 15%;
+
+		--popover: 45 30% 98%;
+		--popover-foreground: 160 50% 15%;
+
+		--primary: 160 60% 25%;
+		--primary-foreground: 45 100% 96%;
+
+		--secondary: 40 50% 90%;
+		--secondary-foreground: 160 60% 20%;
+
+		--muted: 40 30% 92%;
+		--muted-foreground: 160 20% 40%;
+
+		--accent: 40 80% 60%;
+		--accent-foreground: 160 60% 10%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		--border: 45 20% 85%;
+		--input: 45 20% 85%;
+		--ring: 160 60% 25%;
+
+		--radius: 0.75rem;
+	}
+
+	.dark {
+		--background: 160 50% 5%;
+		--foreground: 45 30% 95%;
+
+		--card: 160 50% 7%;
+		--card-foreground: 45 30% 95%;
+
+		--popover: 160 50% 7%;
+		--popover-foreground: 45 30% 95%;
+
+		--primary: 40 80% 60%;
+		--primary-foreground: 160 50% 5%;
+
+		--secondary: 160 40% 12%;
+		--secondary-foreground: 45 30% 90%;
+
+		--muted: 160 40% 15%;
+		--muted-foreground: 45 10% 70%;
+
+		--accent: 160 40% 20%;
+		--accent-foreground: 40 80% 60%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 45 30% 98%;
+
+		--border: 160 40% 15%;
+		--input: 160 40% 15%;
+		--ring: 40 80% 60%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+/* Nice looking thin dark mode scrollbar */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: #5d5d5d;
+	border-radius: 1rem;
+	height: 4px;
+}
