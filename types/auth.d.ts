@@ -8,5 +8,4 @@ declare module "@auth/core/types" {
 	}
 }
 
-// How I solved this problem:
-// https://next-auth.js.org/getting-started/typescript
+
